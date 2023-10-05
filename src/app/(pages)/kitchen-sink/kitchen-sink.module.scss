@@ -1,3 +1,43 @@
-.containerGrid {
-  @apply flex;
+.container {
+  @apply bg-[#edebf8] h-100vh p-4;
+}
+
+.mainBox {
+  display: grid;
+  grid-template-columns: 1fr 60%;
+  grid-template-rows: 55% 1fr;
+  gap: 16px;
+
+  height: 100%;
+
+  & .section {
+    border-radius: 16px;
+
+    &:nth-child(1) {
+      background: #d2d5dc;
+    }
+
+    &:nth-child(4) {
+      background: #211847;
+    }
+  }
+}
+
+.sectionTwo {
+  display: grid;
+  // grid-template-columns: 1fr 30%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+
+  & .smallbox {
+    border-radius: 16px;
+
+    &:nth-child(1) {
+      background: #ffffff;
+    }
+
+    &:nth-child(2) {
+      background: #17cfdb;
+    }
+  }
 }
